@@ -5,16 +5,16 @@ setup(
     version="1.0",
     packages=find_packages(),
     install_requires=[
-        'torch==2.2.2',
-        'numpy==1.25.2',
-        'huggingface_hub==0.26.5',
-        'einops==0.8.1',
-        'Pillow==11.0.0',
-        'torchvision==0.17.2',
-        'opencv-python==4.10.0.84',
-        'torch_cluster==1.6.3',
-        'safetensors==0.4.5',
-        'matplotlib==3.9.3'
+        'torch>=2.0.0',              # Flexible: compatible with mttr-radiance's torch versions
+        'numpy>=1.24.0',             # Flexible: works with numpy 1.25.2+
+        'huggingface_hub>=0.26.0',   # Flexible: compatible with transformers requirements
+        'einops>=0.6.0',             # Flexible: works with 0.8.1+
+        'Pillow>=10.0.0',            # Flexible: works with 11.0.0+
+        'torchvision>=0.15.0',       # Flexible: compatible with various torch versions
+        'opencv-python>=4.5.0',      # Flexible: works with 4.10.0+
+        'torch_cluster',             # No version constraint - use whatever is available
+        'safetensors>=0.3.0',        # Flexible: works with 0.4.5+
+        'matplotlib>=3.5.0'          # Flexible: works with 3.9.3+
     ],
     entry_points={
         "console_scripts": [

@@ -4,3 +4,15 @@ output/
 
 *.png
 *.jpg
+
+# Build artifacts
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Package metadata
+VERSION
