@@ -12,6 +12,9 @@ setup(
         'Pillow>=10.0.0',            # Flexible: works with 11.0.0+
         'torchvision>=0.15.0',       # Flexible: compatible with various torch versions
         'opencv-python>=4.5.0',      # Flexible: works with 4.10.0+
+        # NOTE: torch_cluster often needs to be installed from PyTorch Geometric wheels
+        # If you get symbol errors, install with:
+        # uv pip install torch-cluster -f https://data.pyg.org/whl/torch-2.2.0+cu121.html
         'torch_cluster',             # No version constraint - use whatever is available
         'safetensors>=0.3.0',        # Flexible: works with 0.4.5+
         'matplotlib>=3.5.0'          # Flexible: works with 3.9.3+
