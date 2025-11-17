@@ -20,9 +20,13 @@ dependencies = [
     "Pillow>=10.0.0",
     "torchvision>=0.15.0",
     "opencv-python>=4.5.0",
-    "torch_cluster",
     "safetensors>=0.3.0",
     "matplotlib>=3.5.0",
+]
+
+[project.optional-dependencies]
+clustering = [
+    "torch_cluster",
 ]
 
 [project.urls]
