@@ -1,5 +1,8 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = [
+    "setuptools>=61.0",
+    "torch>=2.0.0",
+]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -20,13 +23,9 @@ dependencies = [
     "Pillow>=10.0.0",
     "torchvision>=0.15.0",
     "opencv-python>=4.5.0",
+    "torch_cluster @ git+https://github.com/rusty1s/pytorch_cluster.git",
     "safetensors>=0.3.0",
     "matplotlib>=3.5.0",
-]
-
-[project.optional-dependencies]
-clustering = [
-    "torch_cluster",
 ]
 
 [project.urls]
